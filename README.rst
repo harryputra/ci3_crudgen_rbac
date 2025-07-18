@@ -32,7 +32,8 @@ Features
 
 
 https://localhost/projectname
-
+https://localhost/projectname/backend/login
+https://localhost/projectname/mcrud  //untuk masuk ke fungsi crud generator
 Before starting, please import the default database in the folder db/db.sql.
 
 *******
