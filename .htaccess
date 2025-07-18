@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /mcode_crudgen/
+
+    # Lewati jika request menuju file/folder yang benar‑benar ada
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirect semua request ke index.php beserta segmen URI
+    RewriteRule ^(.*)$ index.php?/$1 [L,QSA]
+</IfModule>
